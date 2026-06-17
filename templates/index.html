@@ -1,103 +1,36 @@
-<!-- Shop Header -->
-<header style="background: #333; color: white; padding: 20px; text-align: center;">
-    <h1>Megha Boutique & Computer Services</h1>
-    <p>Indira Nagar, Road Number 9</p>
-    <p>Timing: Subah 8:00 - 11:00 | Sham 3:00 - Raat 11:00</p>
-    <p>Contact: 8789201909 / 7903275096</p>
-</header>
-
-<!-- Navigation -->
-<nav style="background: #28a745; padding: 10px; text-align: center;">
-    <a href="#home" style="color: white; margin: 0 10px;">Home</a>
-    <a href="#services" style="color: white; margin: 0 10px;">Services</a>
-    <a href="#payment" style="color: white; margin: 0 10px;">Payment</a>
-    <a href="#about" style="color: white; margin: 0 10px;">About Us</a>
-</nav>
-
-<!-- Products Display -->
-<section id="services" style="padding: 20px;">
-    <h2>Hamari Services</h2>
-    <div style="display: flex; gap: 20px;">
-        <!-- Kurti Product -->
-        <div style="border: 1px solid #ccc; padding: 15px; border-radius: 10px;">
-            <img src="kurti.jpg" alt="Kurti" width="200">
-            <h3>Special Kurti</h3>
-            <p>Price: ₹2500</p>
-            <button onclick="alert('Price: ₹2500')">View Price</button>
-        </div>
-    </div>
-</section>
-
-<!-- Payment Section -->
-<section id="payment" style="padding: 20px; background: #f9f9f9;">
-    <h2>Payment Options</h2>
-    <p>Scan QR to pay via Google Pay, PhonePe, or Paytm:</p>
-    <img src="136171.jpg" alt="QR Code" width="200"> <!-- -->
-    <div>
-        <a href="upi://pay?pa=7277188291@ptyes">Pay via UPI</a>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" style="padding: 20px;">
-    <h2>About Us</h2>
-    <p>Hum kapdon ki silai aur computer sambandhit sabhi karya shuddhata se karte hain.</p>
-</section>
-<section id="services" style="padding: 20px; text-align: center;">
-    <h2>Hamari Kurti Collection</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-        
-        <!-- Kurti Item 1 -->
-        <div style="border: 2px solid #ddd; padding: 10px; border-radius: 15px; width: 250px;">
-            <img src="kurti1.jpg" alt="Kurti Design 1" style="width: 100%; height: 250px; border-radius: 10px;">
-            <h3>Designer Kurti</h3>
-            <p style="color: #e47911; font-weight: bold; font-size: 1.5em;">₹2500</p>
-            <button style="background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px;">Buy Now</button>
-        </div>
-
-        <!-- Kurti Item 2 -->
-        <div style="border: 2px solid #ddd; padding: 10px; border-radius: 15px; width: 250px;">
-            <img src="kurti2.jpg" alt="Kurti Design 2" style="width: 100%; height: 250px; border-radius: 10px;">
-            <h3>Cotton Special</h3>
-            <p style="color: #e47911; font-weight: bold; font-size: 1.5em;">₹1800</p>
-            <button style="background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px;">Buy Now</button>
-        </div>
-
-    </div>
-</section>
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<style>
-    /* Styling for Shop */
-    .product-card { border: 1px solid #ccc; padding: 15px; width: 250px; text-align: center; border-radius: 10px; display: inline-block; margin: 10px; }
-    .buy-btn { background-color: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
-    #payment-section { display: none; margin-top: 20px; padding: 20px; border: 2px solid #28a745; }
-</style>
+    <style>
+        body { font-family: sans-serif; text-align: center; }
+        .product-card { border: 1px solid #ccc; padding: 20px; width: 250px; display: inline-block; border-radius: 10px; box-shadow: 2px 2px 10px #ccc; }
+        .buy-btn { background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        #payment-section { display: none; margin: 20px auto; padding: 20px; border: 2px solid #28a745; width: 300px; border-radius: 10px; }
+    </style>
 </head>
 <body>
 
-<!-- Shop Header -->
-<header style="text-align:center;">
+<header>
     <h1>Megha Boutique & Computer Services</h1>
     <p>Indira Nagar, Road Number 9 | 8789201909</p>
     <p>Timing: 8:00 AM - 11:00 AM | 3:00 PM - 11:00 PM</p>
 </header>
 
-<!-- Product Display -->
 <div class="product-card">
     <h3>Designer Kurti</h3>
     <p>Price: ₹2500</p>
     <button class="buy-btn" onclick="showPayment()">Buy Now</button>
 </div>
 
-<!-- Payment Section (Jo button dabane par khulega) -->
 <div id="payment-section">
     <h2>Payment Karein</h2>
-    <p>QR Code scan karein ya niche diye gaye option par click karein:</p>
-    <img src="136171.jpg" alt="QR Code" width="200">
-    <br>
-    <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar&am=2500" style="padding:10px; background:#007bff; color:white; text-decoration:none;">Pay ₹2500 via UPI</a>
+    <p>QR Code scan karein:</p>
+    <!-- Image file sahi folder mein honi chahiye -->
+    <img src="136171.jpg" alt="QR Code" width="200" style="border: 2px solid #000;">
+    <br><br>
+    <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar&am=2500" style="padding:10px; background:#007bff; color:white; text-decoration:none; border-radius:5px;">Pay ₹2500 via UPI</a>
+    <br><br>
+    <button onclick="document.getElementById('payment-section').style.display='none'">Close</button>
 </div>
 
 <script>
