@@ -1,30 +1,45 @@
-<!-- Header Section -->
-<header style="background-color: #333; color: white; padding: 20px; text-align: center;">
+<!-- Shop Header -->
+<header style="background: #333; color: white; padding: 20px; text-align: center;">
     <h1>Megha Boutique & Computer Services</h1>
     <p>Indira Nagar, Road Number 9</p>
+    <p>Timing: Subah 8:00 - 11:00 | Sham 3:00 - Raat 11:00</p>
+    <p>Contact: 8789201909 / 7903275096</p>
 </header>
 
 <!-- Navigation -->
-<nav style="background-color: #28a745; padding: 10px; text-align: center;">
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Services</a>
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Payment</a>
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+<nav style="background: #28a745; padding: 10px; text-align: center;">
+    <a href="#home" style="color: white; margin: 0 10px;">Home</a>
+    <a href="#services" style="color: white; margin: 0 10px;">Services</a>
+    <a href="#payment" style="color: white; margin: 0 10px;">Payment</a>
+    <a href="#about" style="color: white; margin: 0 10px;">About Us</a>
 </nav>
 
-<!-- Service Cards Section -->
-<div class="services-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;">
-    <!-- Service 1 -->
-    <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 250px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <h3>Silai / Kurti</h3>
-        <div class="price-tag" style="color: #e47911; font-weight: bold; margin: 10px 0;">₹250</div>
-        <button style="background-color: #ffd814; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Buy Now</button>
+<!-- Products Display -->
+<section id="services" style="padding: 20px;">
+    <h2>Hamari Services</h2>
+    <div style="display: flex; gap: 20px;">
+        <!-- Kurti Product -->
+        <div style="border: 1px solid #ccc; padding: 15px; border-radius: 10px;">
+            <img src="kurti.jpg" alt="Kurti" width="200">
+            <h3>Special Kurti</h3>
+            <p>Price: ₹2500</p>
+            <button onclick="alert('Price: ₹2500')">View Price</button>
+        </div>
     </div>
+</section>
 
-    <!-- Service 2 -->
-    <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 250px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <h3>Fashion Designing</h3>
-        <div class="price-tag" style="color: #e47911; font-weight: bold; margin: 10px 0;">Sampark Karein</div>
-        <button style="background-color: #ffd814; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Inquire</button>
+<!-- Payment Section -->
+<section id="payment" style="padding: 20px; background: #f9f9f9;">
+    <h2>Payment Options</h2>
+    <p>Scan QR to pay via Google Pay, PhonePe, or Paytm:</p>
+    <img src="136171.jpg" alt="QR Code" width="200"> <!-- -->
+    <div>
+        <a href="upi://pay?pa=7277188291@ptyes">Pay via UPI</a>
     </div>
-</div>
+</section>
+
+<!-- About Section -->
+<section id="about" style="padding: 20px;">
+    <h2>About Us</h2>
+    <p>Hum kapdon ki silai aur computer sambandhit sabhi karya shuddhata se karte hain.</p>
+</section>
