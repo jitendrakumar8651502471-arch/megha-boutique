@@ -9,7 +9,7 @@
         header { background: #333; color: white; padding: 20px; text-align: center; }
         h1 { background: linear-gradient(to right, #FFD700, #FF4500, #32CD32); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem; margin: 0; }
         
-        nav { background: #2E8B57; padding: 10px; display: flex; justify-content: center; gap: 10px; }
+        nav { background: #2E8B57; padding: 10px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
         nav a { color: white; text-decoration: none; padding: 10px; font-weight: bold; }
         
         .section { padding: 20px; background: white; margin: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
@@ -41,7 +41,7 @@
 
 <div id="home" class="section">
     <h2>Hamare Bare Mein</h2>
-    <p>Megha Boutique & Computer Services mein aapka swagat hai. Hum kapdo ki silai, fashion designing aur computer sambandhit sabhi karya poori shuddhata ke sath karte hain.</p>
+    <p>Megha Boutique & Computer Services mein aapka swagat hai. Hum kapdo ki silai, fashion designing aur computer sambandhit sabhi karya poori shuddhata ke sath karte hain[span_1](start_span)[span_1](end_span).</p>
 </div>
 
 <div id="services" class="section">
@@ -57,20 +57,21 @@
 
 <div id="payment" class="section">
     <h2>Payment Mode</h2>
-    <p>QR Code ko scan karke payment pura karein.</p>
-    <img src="qr_code.png" alt="QR Code" width="150">
-    <p>Payment ke baad screenshot jarur bhejein.</p>
+    <p>QR Code ko scan karke payment pura karein[span_2](start_span)[span_2](end_span).</p>
+    <!-- यहाँ आपकी QR इमेज फाइल है -->
+    <img src="136171.jpg" alt="Mr Jitendra Kumar QR Code" width="250">
+    <p>Payment ke baad screenshot jarur bhejein[span_3](start_span)[span_3](end_span).</p>
     <div class="upi-btns">
-        <a href="#" class="btn gpay">Pay with Google Pay</a>
-        <a href="#" class="btn phonepe">Pay with PhonePe</a>
-        <a href="#" class="btn paytm">Pay with Paytm</a>
+        <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar" class="btn gpay">Pay with Google Pay</a>
+        <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar" class="btn phonepe">Pay with PhonePe</a>
+        <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar" class="btn paytm">Pay with Paytm</a>
     </div>
 </div>
 
 <div id="contact" class="section">
     <h2>Contact</h2>
-    <p>Mobile: 8789209790 / 7903275096</p>
-    <a href="https://wa.me/918789209790" class="whatsapp">WhatsApp Par Message Karein</a>
+    <p>Mobile: 8789209790 / 7903275096[span_4](start_span)[span_4](end_span)</p>
+    <a href="https://wa.me/918789209790" class="whatsapp">WhatsApp Par Message Karein[span_5](start_span)[span_5](end_span)</a>
 </div>
 
 </body>
