@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Megha Boutique & Computer Services</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        nav { background: #444; color: #fff; display: flex; justify-content: center; padding: 0.5rem; }
-        nav a { color: #fff; padding: 0 15px; text-decoration: none; }
-        .container { padding: 20px; }
-        .card { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .qr-section { text-align: center; margin-top: 20px; }
-        .whatsapp-btn { display: inline-block; background: #25d366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; }
-        footer { text-align: center; padding: 10px; background: #333; color: #fff; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        h1 { background: linear-gradient(to right, #FFD700, #FF4500, #32CD32); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        nav { background: #2E8B57; padding: 10px; display: flex; justify-content: center; gap: 10px; }
+        nav a { color: white; text-decoration: none; padding: 10px; font-weight: bold; }
+        
+        .section { padding: 20px; background: white; margin: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        
+        .upi-btns { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
+        .btn { padding: 12px; text-align: center; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .gpay { background: #4285F4; }
+        .phonepe { background: #5f259f; }
+        .paytm { background: #00baf2; }
+        .whatsapp { background: #25d366; display: block; margin-top: 20px; padding: 15px; text-align: center; color: white; text-decoration: none; border-radius: 5px; }
     </style>
 </head>
 <body>
@@ -30,47 +39,39 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<div class="container" id="home">
-    <h2>Swagat hai!</h2>
-    <p>Hamare yahan silai, cosmetic saman aur online document se sambandhit sabhi sevaen uplabdh hain.</p>
+<div id="home" class="section">
+    <h2>Hamare Bare Mein</h2>
+    <p>Megha Boutique & Computer Services mein aapka swagat hai. Hum kapdo ki silai, fashion designing aur computer sambandhit sabhi karya poori shuddhata ke sath karte hain[span_1](start_span)[span_1](end_span).</p>
 </div>
 
-<div class="container" id="services">
-    <h2>Hamari Sevaen</h2>
-    <div class="card">
-        <h3>Silai/Kurti</h3>
-        <p>Price: ₹200</p>
-    </div>
-    <div class="card">
-        <h3>Cosmetic Saman</h3>
-        <p>Price: ₹150</p>
-    </div>
-    <div class="card">
-        <h3>Online Form/Document</h3>
-        <p>Price: ₹50</p>
-    </div>
+<div id="services" class="section">
+    <h2>Hamari Sevaen aur Daam</h2>
+    <table>
+        <tr><th>Seva</th><th>Price</th></tr>
+        <tr><td>Silai / Kurti</td><td>₹200</td></tr>
+        <tr><td>Fashion Designing</td><td>Sampark Karein</td></tr>
+        <tr><td>Cosmetic Saman</td><td>₹150</td></tr>
+        <tr><td>Online Form / Doc</td><td>₹50</td></tr>
+    </table>
 </div>
 
-<div class="container" id="payment">
-    <h2>Payment Kaise Karein?</h2>
-    <div class="card qr-section">
-        <p>Niche diye gaye QR code ko scan karke aap asani se payment kar sakte hain:</p>
-        <img src="qr_code_placeholder.png" alt="Mera QR Code" width="200">
-        <p><strong>Payment ke baad screenshot jarur bhejein.</strong></p>
-    </div>
-</div>
-
-<div class="container" id="contact">
-    <h2>Sampark Karein</h2>
-    <div class="card">
-        <p>Mobile: 8789209790 / 7903275096</p>
-        <a href="https://wa.me/918789209790" class="whatsapp-btn">WhatsApp par Message Karein</a>
+<div id="payment" class="section">
+    <h2>Payment Mode</h2>
+    <p>QR Code ko scan karke payment pura karein[span_2](start_span)[span_2](end_span).</p>
+    <img src="qr_code_placeholder.png" alt="QR Code" width="150">
+    <p>Payment ke baad screenshot jarur bhejein[span_3](start_span)[span_3](end_span).</p>
+    <div class="upi-btns">
+        <a href="#" class="btn gpay">Pay with Google Pay</a>
+        <a href="#" class="btn phonepe">Pay with PhonePe</a>
+        <a href="#" class="btn paytm">Pay with Paytm</a>
     </div>
 </div>
 
-<footer>
-    <p>&copy; 2026 Megha Boutique & Computer Services</p>
-</footer>
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Mobile: 8789209790 / 7903275096[span_4](start_span)[span_4](end_span)</p>
+    <a href="https://wa.me/918789209790" class="whatsapp">WhatsApp Par Message Karein[span_5](start_span)[span_5](end_span)</a>
+</div>
 
 </body>
 </html>
