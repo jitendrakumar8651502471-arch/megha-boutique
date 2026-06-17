@@ -1,78 +1,55 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megha Boutique & Computer Services</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
-        header { background: #333; color: white; padding: 20px; text-align: center; }
-        h1 { background: linear-gradient(to right, #FFD700, #FF4500, #32CD32); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem; margin: 0; }
-        
-        nav { background: #2E8B57; padding: 10px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
-        nav a { color: white; text-decoration: none; padding: 10px; font-weight: bold; }
-        
-        .section { padding: 20px; background: white; margin: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        
-        .upi-btns { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
-        .btn { padding: 12px; text-align: center; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .gpay { background: #4285F4; }
-        .phonepe { background: #5f259f; }
-        .paytm { background: #00baf2; }
-        .whatsapp { background: #25d366; display: block; margin-top: 20px; padding: 15px; text-align: center; color: white; text-decoration: none; border-radius: 5px; }
-    </style>
-</head>
-<body>
+<style>
+    /* Service Cards ka Design */
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .service-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    .service-card:hover { box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+    .price-tag { color: #e47911; font-weight: bold; font-size: 1.2em; margin: 10px 0; }
+    .btn-buy {
+        background-color: #ffd814;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+</style>
 
-<header>
-    <h1>Megha Boutique & Computer Services</h1>
-    <p>Indira Nagar, Road Number 9</p>
-</header>
+<div class="services-container">
+    <!-- Service 1 -->
+    <div class="service-card">
+        <h3>Silai / Kurti</h3>
+        <p>Expert stitching services.</p>
+        <div class="price-tag">₹250</div>
+        <button class="btn-buy">Buy Now</button>
+    </div>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#payment">Payment</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- Service 2 -->
+    <div class="service-card">
+        <h3>Fashion Designing</h3>
+        <p>Custom designs for you.</p>
+        <div class="price-tag">Contact Us</div>
+        <button class="btn-buy">Inquire</button>
+    </div>
 
-<div id="home" class="section">
-    <h2>Hamare Bare Mein</h2>
-    <p>Megha Boutique & Computer Services mein aapka swagat hai. Hum kapdo ki silai, fashion designing aur computer sambandhit sabhi karya poori shuddhata ke sath karte hain[span_1](start_span)[span_1](end_span).</p>
-</div>
-
-<div id="services" class="section">
-    <h2>Hamari Sevaen aur price</h2>
-    <table>
-        <tr><th>Seva</th><th>Price</th></tr>
-        <tr><td>Silai / Kurti</td><td>₹250</td></tr>
-        <tr><td>Fashion Designing</td><td>Sampark Karein</td></tr>
-        <tr><td>Cosmetic Saman</td><td>₹150-500</td></tr>
-        <tr><td>Online Form / Doc</td><td>₹50-150</td></tr>
-    </table>
-</div>
-
-<div id="payment" class="section">
-    <h2>Payment Mode</h2>
-    <p>QR Code ko scan karke payment pura karein[span_2](start_span)[span_2](end_span).</p>
-    <!-- यहाँ आपकी QR इमेज फाइल है -->
-    <img src="136171.jpg" alt="Mr Jitendra Kumar QR Code" width="250">
-    <p>Payment ke baad screenshot jarur bhejein[span_3](start_span)[span_3](end_span).</p>
-    <div class="upi-btns">
-        <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar" class="btn gpay">Pay with Google Pay</a>
-        <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar" class="btn phonepe">Pay with PhonePe</a>
-        <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar" class="btn paytm">Pay with Paytm</a>
+    <!-- Service 3 -->
+    <div class="service-card">
+        <h3>Cosmetic Saman</h3>
+        <p>High quality products.</p>
+        <div class="price-tag">₹150 - ₹500</div>
+        <button class="btn-buy">Buy Now</button>
     </div>
 </div>
-
-<div id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Mobile: 8789201909 / 7903275096[span_4](start_span)[span_4](end_span)</p>
-    <a href="https://wa.me/918789209790" class="whatsapp">WhatsApp Par Message Karein[span_5](start_span)[span_5](end_span)</a>
-</div>
-
-</body>
-</html>
