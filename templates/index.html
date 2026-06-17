@@ -2,36 +2,75 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megha Boutique & Computer Services</title>
     <style>
-        body { font-family: sans-serif; background: #fdf2f8; padding: 20px; }
-        .container { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
-        .price { color: green; font-weight: bold; }
-        .qr-section { text-align: center; margin-top: 20px; border: 2px dashed #d63384; padding: 20px; }
-        .btn { display: inline-block; background: #d63384; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold; }
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
+        nav { background: #444; color: #fff; display: flex; justify-content: center; padding: 0.5rem; }
+        nav a { color: #fff; padding: 0 15px; text-decoration: none; }
+        .container { padding: 20px; }
+        .card { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .qr-section { text-align: center; margin-top: 20px; }
+        .whatsapp-btn { display: inline-block; background: #25d366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; }
+        footer { text-align: center; padding: 10px; background: #333; color: #fff; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>✨ Megha Boutique & Computer Services ✨</h1>
-        <p><b>Address:</b> Indira Nagar, Road Number 9</p>
 
-        <h3>Hamari Sevayein aur Daam:</h3>
-        <p>👗 Silai/Kurti: <span class="price">₹200</span></p>
-        <p>💄 Cosmetic Saman: <span class="price">₹150</span></p>
-        <p>💻 Online Form/Document: <span class="price">₹50</span></p>
+<header>
+    <h1>Megha Boutique & Computer Services</h1>
+    <p>Indira Nagar, Road Number 9</p>
+</header>
 
-        <div class="qr-section">
-            <h3>Payment Kaise Karein?</h3>
-            <p>Niche diye gaye QR code ko scan karke aap asani se payment kar sakte hain:</p>
-            <img src="https://via.placeholder.com/150" alt="Mera QR Code">
-            <p><b>Payment ke baad screenshot jarur bhejein.</b></p>
-        </div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#payment">Payment</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <div style="text-align: center;">
-            <a href="https://wa.me/918789201909" class="btn">WhatsApp par Screenshot bhejein</a>
-            <br><br>
-            <a href="http://maps.google.com/?q=Indira+Nagar+Road+Number+9+Patna" target="_blank">Google Maps par Location dekhein</a>
-        </div>
+<div class="container" id="home">
+    <h2>Swagat hai!</h2>
+    <p>Hamare yahan silai, cosmetic saman aur online document se sambandhit sabhi sevaen uplabdh hain.</p>
+</div>
+
+<div class="container" id="services">
+    <h2>Hamari Sevaen</h2>
+    <div class="card">
+        <h3>Silai/Kurti</h3>
+        <p>Price: ₹200</p>
     </div>
+    <div class="card">
+        <h3>Cosmetic Saman</h3>
+        <p>Price: ₹150</p>
+    </div>
+    <div class="card">
+        <h3>Online Form/Document</h3>
+        <p>Price: ₹50</p>
+    </div>
+</div>
+
+<div class="container" id="payment">
+    <h2>Payment Kaise Karein?</h2>
+    <div class="card qr-section">
+        <p>Niche diye gaye QR code ko scan karke aap asani se payment kar sakte hain:</p>
+        <img src="qr_code_placeholder.png" alt="Mera QR Code" width="200">
+        <p><strong>Payment ke baad screenshot jarur bhejein.</strong></p>
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Sampark Karein</h2>
+    <div class="card">
+        <p>Mobile: 8789209790 / 7903275096</p>
+        <a href="https://wa.me/918789209790" class="whatsapp-btn">WhatsApp par Message Karein</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Megha Boutique & Computer Services</p>
+</footer>
+
 </body>
 </html>
