@@ -65,3 +65,46 @@
 
     </div>
 </section>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<style>
+    /* Styling for Shop */
+    .product-card { border: 1px solid #ccc; padding: 15px; width: 250px; text-align: center; border-radius: 10px; display: inline-block; margin: 10px; }
+    .buy-btn { background-color: #28a745; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
+    #payment-section { display: none; margin-top: 20px; padding: 20px; border: 2px solid #28a745; }
+</style>
+</head>
+<body>
+
+<!-- Shop Header -->
+<header style="text-align:center;">
+    <h1>Megha Boutique & Computer Services</h1>
+    <p>Indira Nagar, Road Number 9 | 8789201909</p>
+    <p>Timing: 8:00 AM - 11:00 AM | 3:00 PM - 11:00 PM</p>
+</header>
+
+<!-- Product Display -->
+<div class="product-card">
+    <h3>Designer Kurti</h3>
+    <p>Price: ₹2500</p>
+    <button class="buy-btn" onclick="showPayment()">Buy Now</button>
+</div>
+
+<!-- Payment Section (Jo button dabane par khulega) -->
+<div id="payment-section">
+    <h2>Payment Karein</h2>
+    <p>QR Code scan karein ya niche diye gaye option par click karein:</p>
+    <img src="136171.jpg" alt="QR Code" width="200">
+    <br>
+    <a href="upi://pay?pa=7277188291@ptyes&pn=Jitendra%20Kumar&am=2500" style="padding:10px; background:#007bff; color:white; text-decoration:none;">Pay ₹2500 via UPI</a>
+</div>
+
+<script>
+    function showPayment() {
+        document.getElementById('payment-section').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
