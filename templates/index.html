@@ -1,55 +1,30 @@
-<style>
-    /* Service Cards ka Design */
-    .services-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        padding: 20px;
-    }
-    .service-card {
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 20px;
-        width: 250px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        transition: 0.3s;
-    }
-    .service-card:hover { box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
-    .price-tag { color: #e47911; font-weight: bold; font-size: 1.2em; margin: 10px 0; }
-    .btn-buy {
-        background-color: #ffd814;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-weight: bold;
-    }
-</style>
+<!-- Header Section -->
+<header style="background-color: #333; color: white; padding: 20px; text-align: center;">
+    <h1>Megha Boutique & Computer Services</h1>
+    <p>Indira Nagar, Road Number 9</p>
+</header>
 
-<div class="services-container">
+<!-- Navigation -->
+<nav style="background-color: #28a745; padding: 10px; text-align: center;">
+    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Services</a>
+    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Payment</a>
+    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+</nav>
+
+<!-- Service Cards Section -->
+<div class="services-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;">
     <!-- Service 1 -->
-    <div class="service-card">
+    <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 250px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <h3>Silai / Kurti</h3>
-        <p>Expert stitching services.</p>
-        <div class="price-tag">₹250</div>
-        <button class="btn-buy">Buy Now</button>
+        <div class="price-tag" style="color: #e47911; font-weight: bold; margin: 10px 0;">₹250</div>
+        <button style="background-color: #ffd814; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Buy Now</button>
     </div>
 
     <!-- Service 2 -->
-    <div class="service-card">
+    <div class="service-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 250px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <h3>Fashion Designing</h3>
-        <p>Custom designs for you.</p>
-        <div class="price-tag">Contact Us</div>
-        <button class="btn-buy">Inquire</button>
-    </div>
-
-    <!-- Service 3 -->
-    <div class="service-card">
-        <h3>Cosmetic Saman</h3>
-        <p>High quality products.</p>
-        <div class="price-tag">₹150 - ₹500</div>
-        <button class="btn-buy">Buy Now</button>
+        <div class="price-tag" style="color: #e47911; font-weight: bold; margin: 10px 0;">Sampark Karein</div>
+        <button style="background-color: #ffd814; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Inquire</button>
     </div>
 </div>
